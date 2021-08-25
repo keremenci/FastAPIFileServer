@@ -16,7 +16,7 @@ async def docs_redirect():
     status_code=status.HTTP_201_CREATED,
     summary="Upload file to the server",
     )
-async def create_upload_file(group_id: int, domain: str, newfilename: Optional[str] = None, file: UploadFile = File(...)):
+async def create_upload_file(group_id: str, domain: str, newfilename: Optional[str] = None, file: UploadFile = File(...)):
     """
     Receive and store a file in the given path. The path is supplied as follows:
 
@@ -64,7 +64,7 @@ class HTTPError(BaseModel):
             },
         }
     )
-async def get_file(group_id: int, domain: str, filename: str):
+async def get_file(group_id: str, domain: str, filename: str):
     """
     Request the specified file from the server
 
