@@ -1,0 +1,12 @@
+# One line script to delete uploads
+nuke.sh
+
+# File containing uvicorn run command
+run.py
+
+# Virtual environment
+venv/
+
+__pycache__/
+
+uploads/
