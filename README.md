@@ -1,1 +1,1 @@
-# PdfFileServer - A simple FastAPI server for file transfer
+# FastAPIFileServer - A simple FastAPI server for file transfer
